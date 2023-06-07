@@ -30,6 +30,14 @@ Once you installed the package, run the command `wandb --version` and check the 
 
 What's the version that you have?
 
+**Answer**
+
+* conda installed
+* `pandas`, `matplotlib`, `scikit-learn` and `pyarrow` is installed using conda
+* `ẁandb` is installed using `pip`. This is because, `wandb` package is not available in default conda chanel. Another solution could be to try with conda-forge chanel, which provides a wider range of packages.
+
+The output of the command `wandb --version` is `wandb, version 0.15.4`
+
 # Q2. Download and preprocess the data
 
 We'll use the Green Taxi Trip Records dataset to predict the amount of tips for each trip. 
