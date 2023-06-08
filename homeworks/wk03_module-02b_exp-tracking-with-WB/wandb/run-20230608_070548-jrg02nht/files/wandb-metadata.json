@@ -1,0 +1,64 @@
+{
+    "os": "Linux-5.19.0-1025-aws-x86_64-with-glibc2.35",
+    "python": "3.11.3",
+    "heartbeatAt": "2023-06-08T07:05:49.401664",
+    "startedAt": "2023-06-08T07:05:48.943557",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--wandb_project",
+        "NYC_GREEN_TAXI",
+        "--wandb_entity",
+        "bsarma",
+        "--data_artifact",
+        "bsarma/NYC_GREEN_TAXI/NYC-Taxi:v0"
+    ],
+    "state": "running",
+    "program": "/home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/sweep.py",
+    "codePath": "homeworks/wk03_module-02b_exp-tracking-with-WB/sweep.py",
+    "git": {
+        "remote": "git@github.com:bhasarma/MLOps-zoomcamp.git",
+        "commit": "be302fed3be8ce08037749e10e54d8ccab975a0c"
+    },
+    "email": null,
+    "root": "/home/ubuntu/MLOps-zoomcamp",
+    "host": "ip-172-31-37-151",
+    "username": "ubuntu",
+    "executable": "/home/ubuntu/anaconda3/envs/wandb-workshop/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 4,
+    "cpu_freq": {
+        "current": 2400.023,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2400.023,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2400.023,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2400.023,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2400.023,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 28.89361572265625,
+        "used": 12.502296447753906
+    },
+    "memory": {
+        "total": 15.623565673828125
+    }
+}

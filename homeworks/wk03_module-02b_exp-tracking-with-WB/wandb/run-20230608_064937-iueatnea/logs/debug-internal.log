@@ -1,0 +1,195 @@
+2023-06-08 06:49:37,942 INFO    StreamThr :17104 [internal.py:wandb_internal():86] W&B internal server running at pid: 17104, started at: 2023-06-08 06:49:37.942595
+2023-06-08 06:49:37,946 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: status
+2023-06-08 06:49:37,949 INFO    WriterThread:17104 [datastore.py:open_for_write():85] open: /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/run-iueatnea.wandb
+2023-06-08 06:49:37,950 DEBUG   SenderThread:17104 [sender.py:send():369] send: header
+2023-06-08 06:49:37,954 DEBUG   SenderThread:17104 [sender.py:send():369] send: run
+2023-06-08 06:49:38,287 INFO    SenderThread:17104 [dir_watcher.py:__init__():211] watching files in: /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files
+2023-06-08 06:49:38,288 INFO    SenderThread:17104 [sender.py:_start_run_threads():1100] run started: iueatnea with start time 1686206977.944984
+2023-06-08 06:49:38,288 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: summary_record
+2023-06-08 06:49:38,288 INFO    SenderThread:17104 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-06-08 06:49:38,289 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: check_version
+2023-06-08 06:49:38,290 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: check_version
+2023-06-08 06:49:38,359 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: run_start
+2023-06-08 06:49:38,360 DEBUG   HandlerThread:17104 [system_info.py:__init__():31] System info init
+2023-06-08 06:49:38,360 DEBUG   HandlerThread:17104 [system_info.py:__init__():46] System info init done
+2023-06-08 06:49:38,360 INFO    HandlerThread:17104 [system_monitor.py:start():181] Starting system monitor
+2023-06-08 06:49:38,361 INFO    SystemMonitor:17104 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-08 06:49:38,361 INFO    HandlerThread:17104 [system_monitor.py:probe():201] Collecting system info
+2023-06-08 06:49:38,362 INFO    SystemMonitor:17104 [interfaces.py:start():190] Started cpu monitoring
+2023-06-08 06:49:38,363 INFO    SystemMonitor:17104 [interfaces.py:start():190] Started disk monitoring
+2023-06-08 06:49:38,364 DEBUG   HandlerThread:17104 [system_info.py:probe():195] Probing system
+2023-06-08 06:49:38,365 INFO    SystemMonitor:17104 [interfaces.py:start():190] Started memory monitoring
+2023-06-08 06:49:38,367 INFO    SystemMonitor:17104 [interfaces.py:start():190] Started network monitoring
+2023-06-08 06:49:38,368 DEBUG   HandlerThread:17104 [system_info.py:_probe_git():180] Probing git
+2023-06-08 06:49:38,373 DEBUG   HandlerThread:17104 [system_info.py:_probe_git():188] Probing git done
+2023-06-08 06:49:38,373 DEBUG   HandlerThread:17104 [system_info.py:probe():240] Probing system done
+2023-06-08 06:49:38,373 DEBUG   HandlerThread:17104 [system_monitor.py:probe():210] {'os': 'Linux-5.19.0-1025-aws-x86_64-with-glibc2.35', 'python': '3.11.3', 'heartbeatAt': '2023-06-08T06:49:38.364605', 'startedAt': '2023-06-08T06:49:37.932684', 'docker': None, 'cuda': None, 'args': ('--wandb_project', 'NYC_GREEN_TAXI', '--wandb_entity', 'bsarma', '--data_artifact', 'bsarma/NYC_GREEN_TAXI/NYC-Taxi:v0'), 'state': 'running', 'program': '/home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/train.py', 'codePath': 'homeworks/wk03_module-02b_exp-tracking-with-WB/train.py', 'git': {'remote': 'git@github.com:bhasarma/MLOps-zoomcamp.git', 'commit': 'be302fed3be8ce08037749e10e54d8ccab975a0c'}, 'email': None, 'root': '/home/ubuntu/MLOps-zoomcamp', 'host': 'ip-172-31-37-151', 'username': 'ubuntu', 'executable': '/home/ubuntu/anaconda3/envs/wandb-workshop/bin/python', 'cpu_count': 4, 'cpu_count_logical': 4, 'cpu_freq': {'current': 2400.023, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2400.023, 'min': 0.0, 'max': 0.0}, {'current': 2400.023, 'min': 0.0, 'max': 0.0}, {'current': 2400.023, 'min': 0.0, 'max': 0.0}, {'current': 2400.023, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 28.89361572265625, 'used': 12.49258804321289}, 'memory': {'total': 15.623565673828125}}
+2023-06-08 06:49:38,373 INFO    HandlerThread:17104 [system_monitor.py:probe():211] Finished collecting system info
+2023-06-08 06:49:38,373 INFO    HandlerThread:17104 [system_monitor.py:probe():214] Publishing system info
+2023-06-08 06:49:38,373 DEBUG   HandlerThread:17104 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-06-08 06:49:38,374 DEBUG   HandlerThread:17104 [system_info.py:_save_pip():67] Saving pip packages done
+2023-06-08 06:49:38,374 DEBUG   HandlerThread:17104 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-06-08 06:49:39,289 INFO    Thread-12 :17104 [dir_watcher.py:_on_file_created():272] file/dir created: /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files/conda-environment.yaml
+2023-06-08 06:49:39,289 INFO    Thread-12 :17104 [dir_watcher.py:_on_file_created():272] file/dir created: /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files/requirements.txt
+2023-06-08 06:49:39,289 INFO    Thread-12 :17104 [dir_watcher.py:_on_file_created():272] file/dir created: /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files/wandb-summary.json
+2023-06-08 06:49:42,016 DEBUG   HandlerThread:17104 [system_info.py:_save_conda():86] Saving conda packages done
+2023-06-08 06:49:42,017 INFO    HandlerThread:17104 [system_monitor.py:probe():216] Finished publishing system info
+2023-06-08 06:49:42,022 DEBUG   SenderThread:17104 [sender.py:send():369] send: files
+2023-06-08 06:49:42,022 INFO    SenderThread:17104 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-06-08 06:49:42,026 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-08 06:49:42,027 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: stop_status
+2023-06-08 06:49:42,180 DEBUG   SenderThread:17104 [sender.py:send():369] send: telemetry
+2023-06-08 06:49:42,289 INFO    Thread-12 :17104 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files/conda-environment.yaml
+2023-06-08 06:49:42,289 INFO    Thread-12 :17104 [dir_watcher.py:_on_file_created():272] file/dir created: /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files/wandb-metadata.json
+2023-06-08 06:49:42,501 DEBUG   SenderThread:17104 [sender.py:send():369] send: use_artifact
+2023-06-08 06:49:42,615 INFO    wandb-upload_0:17104 [upload_job.py:push():133] Uploaded file /tmp/tmp66id8bftwandb/tq1idgck-wandb-metadata.json
+2023-06-08 06:49:43,289 INFO    Thread-12 :17104 [dir_watcher.py:_on_file_created():272] file/dir created: /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files/output.log
+2023-06-08 06:49:43,863 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: status_report
+2023-06-08 06:49:45,290 INFO    Thread-12 :17104 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files/output.log
+2023-06-08 06:49:48,865 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: status_report
+2023-06-08 06:49:52,930 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-08 06:49:52,931 DEBUG   SenderThread:17104 [sender.py:send():369] send: history
+2023-06-08 06:49:52,931 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: summary_record
+2023-06-08 06:49:52,933 INFO    SenderThread:17104 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-06-08 06:49:53,115 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: log_artifact
+2023-06-08 06:49:53,115 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: log_artifact
+2023-06-08 06:49:53,293 INFO    Thread-12 :17104 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files/wandb-summary.json
+2023-06-08 06:49:54,118 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-08 06:49:55,150 INFO    wandb-upload_0:17104 [upload_job.py:push():91] Uploaded file /home/ubuntu/.local/share/wandb/artifacts/staging/tmpewmyfmpf
+2023-06-08 06:49:55,980 INFO    SenderThread:17104 [sender.py:send_request_log_artifact():1414] logged artifact random_forest_regressor - {'id': 'QXJ0aWZhY3Q6NDgxMTUyOTg5', 'digest': 'f716fa05d612f94037d805884c5e41c4', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjc1NDA2Nzg0', 'latestArtifact': None}, 'version': 'latest'}
+2023-06-08 06:49:55,980 DEBUG   SenderThread:17104 [sender.py:send():369] send: exit
+2023-06-08 06:49:55,980 INFO    SenderThread:17104 [sender.py:send_exit():574] handling exit code: 0
+2023-06-08 06:49:55,980 INFO    SenderThread:17104 [sender.py:send_exit():576] handling runtime: 14
+2023-06-08 06:49:55,981 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: status_report
+2023-06-08 06:49:55,982 INFO    SenderThread:17104 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-06-08 06:49:55,983 INFO    SenderThread:17104 [sender.py:send_exit():582] send defer
+2023-06-08 06:49:55,983 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: poll_exit
+2023-06-08 06:49:55,983 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 06:49:55,983 INFO    HandlerThread:17104 [handler.py:handle_request_defer():170] handle defer: 0
+2023-06-08 06:49:55,983 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: defer
+2023-06-08 06:49:55,984 INFO    SenderThread:17104 [sender.py:send_request_defer():598] handle sender defer: 0
+2023-06-08 06:49:55,984 INFO    SenderThread:17104 [sender.py:transition_state():602] send defer: 1
+2023-06-08 06:49:55,984 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 06:49:55,984 INFO    HandlerThread:17104 [handler.py:handle_request_defer():170] handle defer: 1
+2023-06-08 06:49:55,984 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: defer
+2023-06-08 06:49:55,984 INFO    SenderThread:17104 [sender.py:send_request_defer():598] handle sender defer: 1
+2023-06-08 06:49:55,984 INFO    SenderThread:17104 [sender.py:transition_state():602] send defer: 2
+2023-06-08 06:49:55,984 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 06:49:55,984 INFO    HandlerThread:17104 [handler.py:handle_request_defer():170] handle defer: 2
+2023-06-08 06:49:55,984 INFO    HandlerThread:17104 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-08 06:49:55,985 DEBUG   SystemMonitor:17104 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-08 06:49:55,985 INFO    HandlerThread:17104 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-08 06:49:55,985 DEBUG   SystemMonitor:17104 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-08 06:49:55,985 INFO    HandlerThread:17104 [interfaces.py:finish():202] Joined disk monitor
+2023-06-08 06:49:55,985 DEBUG   SystemMonitor:17104 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-08 06:49:55,985 INFO    HandlerThread:17104 [interfaces.py:finish():202] Joined memory monitor
+2023-06-08 06:49:55,986 INFO    HandlerThread:17104 [interfaces.py:finish():202] Joined network monitor
+2023-06-08 06:49:55,986 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: defer
+2023-06-08 06:49:55,986 INFO    SenderThread:17104 [sender.py:send_request_defer():598] handle sender defer: 2
+2023-06-08 06:49:55,986 INFO    SenderThread:17104 [sender.py:transition_state():602] send defer: 3
+2023-06-08 06:49:55,986 DEBUG   SenderThread:17104 [sender.py:send():369] send: stats
+2023-06-08 06:49:55,987 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 06:49:55,987 INFO    HandlerThread:17104 [handler.py:handle_request_defer():170] handle defer: 3
+2023-06-08 06:49:55,987 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: defer
+2023-06-08 06:49:55,987 INFO    SenderThread:17104 [sender.py:send_request_defer():598] handle sender defer: 3
+2023-06-08 06:49:55,987 INFO    SenderThread:17104 [sender.py:transition_state():602] send defer: 4
+2023-06-08 06:49:55,987 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 06:49:55,987 INFO    HandlerThread:17104 [handler.py:handle_request_defer():170] handle defer: 4
+2023-06-08 06:49:55,988 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: defer
+2023-06-08 06:49:55,988 INFO    SenderThread:17104 [sender.py:send_request_defer():598] handle sender defer: 4
+2023-06-08 06:49:55,988 INFO    SenderThread:17104 [sender.py:transition_state():602] send defer: 5
+2023-06-08 06:49:55,988 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 06:49:55,988 INFO    HandlerThread:17104 [handler.py:handle_request_defer():170] handle defer: 5
+2023-06-08 06:49:55,988 DEBUG   SenderThread:17104 [sender.py:send():369] send: summary
+2023-06-08 06:49:55,988 INFO    SenderThread:17104 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-06-08 06:49:55,989 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: defer
+2023-06-08 06:49:55,989 INFO    SenderThread:17104 [sender.py:send_request_defer():598] handle sender defer: 5
+2023-06-08 06:49:55,989 INFO    SenderThread:17104 [sender.py:transition_state():602] send defer: 6
+2023-06-08 06:49:55,989 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 06:49:55,989 INFO    HandlerThread:17104 [handler.py:handle_request_defer():170] handle defer: 6
+2023-06-08 06:49:55,989 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: defer
+2023-06-08 06:49:55,989 INFO    SenderThread:17104 [sender.py:send_request_defer():598] handle sender defer: 6
+2023-06-08 06:49:55,992 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: status_report
+2023-06-08 06:49:56,162 INFO    SenderThread:17104 [sender.py:transition_state():602] send defer: 7
+2023-06-08 06:49:56,162 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 06:49:56,162 INFO    HandlerThread:17104 [handler.py:handle_request_defer():170] handle defer: 7
+2023-06-08 06:49:56,162 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: defer
+2023-06-08 06:49:56,162 INFO    SenderThread:17104 [sender.py:send_request_defer():598] handle sender defer: 7
+2023-06-08 06:49:56,294 INFO    Thread-12 :17104 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files/wandb-summary.json
+2023-06-08 06:49:56,294 INFO    Thread-12 :17104 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files/config.yaml
+2023-06-08 06:49:56,866 INFO    SenderThread:17104 [sender.py:transition_state():602] send defer: 8
+2023-06-08 06:49:56,866 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 06:49:56,866 INFO    HandlerThread:17104 [handler.py:handle_request_defer():170] handle defer: 8
+2023-06-08 06:49:56,866 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: defer
+2023-06-08 06:49:56,866 INFO    SenderThread:17104 [sender.py:send_request_defer():598] handle sender defer: 8
+2023-06-08 06:49:56,866 INFO    SenderThread:17104 [job_builder.py:build():232] Attempting to build job artifact
+2023-06-08 06:49:56,867 INFO    SenderThread:17104 [job_builder.py:build():256] is repo sourced job
+2023-06-08 06:49:56,868 INFO    SenderThread:17104 [job_builder.py:build():297] adding wandb-job metadata file
+2023-06-08 06:49:56,872 INFO    SenderThread:17104 [sender.py:transition_state():602] send defer: 9
+2023-06-08 06:49:56,872 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 06:49:56,872 INFO    HandlerThread:17104 [handler.py:handle_request_defer():170] handle defer: 9
+2023-06-08 06:49:56,872 DEBUG   SenderThread:17104 [sender.py:send():369] send: artifact
+2023-06-08 06:49:57,294 INFO    Thread-12 :17104 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files/output.log
+2023-06-08 06:49:57,981 INFO    wandb-upload_1:17104 [upload_job.py:push():91] Uploaded file /home/ubuntu/.local/share/wandb/artifacts/staging/tmptv3h0qyn
+2023-06-08 06:49:58,011 INFO    wandb-upload_0:17104 [upload_job.py:push():91] Uploaded file /home/ubuntu/.local/share/wandb/artifacts/staging/tmpj2c54ray
+2023-06-08 06:49:59,120 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-08 06:49:59,228 INFO    SenderThread:17104 [sender.py:send_artifact():1450] sent artifact job-git_github.com_bhasarma_MLOps-zoomcamp.git_homeworks_wk03_module-02b_exp-tracking-with-WB_train.py - {'id': 'QXJ0aWZhY3Q6NDgxMTUzMDQy', 'digest': '5df4dc62eb1d319a55ba5c1d4cff5579', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjc1NDA2Nzg4', 'latestArtifact': None}, 'version': 'latest'}
+2023-06-08 06:49:59,228 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: defer
+2023-06-08 06:49:59,228 INFO    SenderThread:17104 [sender.py:send_request_defer():598] handle sender defer: 9
+2023-06-08 06:49:59,228 INFO    SenderThread:17104 [dir_watcher.py:finish():359] shutting down directory watcher
+2023-06-08 06:49:59,295 INFO    SenderThread:17104 [dir_watcher.py:finish():389] scan: /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files
+2023-06-08 06:49:59,295 INFO    SenderThread:17104 [dir_watcher.py:finish():403] scan save: /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files/wandb-summary.json wandb-summary.json
+2023-06-08 06:49:59,295 INFO    SenderThread:17104 [dir_watcher.py:finish():403] scan save: /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files/wandb-metadata.json wandb-metadata.json
+2023-06-08 06:49:59,296 INFO    SenderThread:17104 [dir_watcher.py:finish():403] scan save: /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files/output.log output.log
+2023-06-08 06:49:59,296 INFO    SenderThread:17104 [dir_watcher.py:finish():403] scan save: /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files/requirements.txt requirements.txt
+2023-06-08 06:49:59,296 INFO    SenderThread:17104 [dir_watcher.py:finish():403] scan save: /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files/conda-environment.yaml conda-environment.yaml
+2023-06-08 06:49:59,296 INFO    SenderThread:17104 [dir_watcher.py:finish():403] scan save: /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files/config.yaml config.yaml
+2023-06-08 06:49:59,298 INFO    SenderThread:17104 [sender.py:transition_state():602] send defer: 10
+2023-06-08 06:49:59,306 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 06:49:59,307 INFO    HandlerThread:17104 [handler.py:handle_request_defer():170] handle defer: 10
+2023-06-08 06:49:59,307 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: defer
+2023-06-08 06:49:59,307 INFO    SenderThread:17104 [sender.py:send_request_defer():598] handle sender defer: 10
+2023-06-08 06:49:59,307 INFO    SenderThread:17104 [file_pusher.py:finish():159] shutting down file pusher
+2023-06-08 06:49:59,761 INFO    wandb-upload_1:17104 [upload_job.py:push():133] Uploaded file /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files/output.log
+2023-06-08 06:49:59,791 INFO    wandb-upload_3:17104 [upload_job.py:push():133] Uploaded file /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files/conda-environment.yaml
+2023-06-08 06:49:59,791 INFO    wandb-upload_2:17104 [upload_job.py:push():133] Uploaded file /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files/wandb-summary.json
+2023-06-08 06:49:59,792 INFO    wandb-upload_0:17104 [upload_job.py:push():133] Uploaded file /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files/requirements.txt
+2023-06-08 06:49:59,818 INFO    wandb-upload_4:17104 [upload_job.py:push():133] Uploaded file /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/files/config.yaml
+2023-06-08 06:50:00,018 INFO    Thread-11 (_thread_body):17104 [sender.py:transition_state():602] send defer: 11
+2023-06-08 06:50:00,019 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 06:50:00,019 INFO    HandlerThread:17104 [handler.py:handle_request_defer():170] handle defer: 11
+2023-06-08 06:50:00,019 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: defer
+2023-06-08 06:50:00,019 INFO    SenderThread:17104 [sender.py:send_request_defer():598] handle sender defer: 11
+2023-06-08 06:50:00,019 INFO    SenderThread:17104 [file_pusher.py:join():164] waiting for file pusher
+2023-06-08 06:50:00,019 INFO    SenderThread:17104 [sender.py:transition_state():602] send defer: 12
+2023-06-08 06:50:00,019 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 06:50:00,020 INFO    HandlerThread:17104 [handler.py:handle_request_defer():170] handle defer: 12
+2023-06-08 06:50:00,020 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: defer
+2023-06-08 06:50:00,020 INFO    SenderThread:17104 [sender.py:send_request_defer():598] handle sender defer: 12
+2023-06-08 06:50:00,167 INFO    SenderThread:17104 [sender.py:transition_state():602] send defer: 13
+2023-06-08 06:50:00,168 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 06:50:00,168 INFO    HandlerThread:17104 [handler.py:handle_request_defer():170] handle defer: 13
+2023-06-08 06:50:00,168 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: defer
+2023-06-08 06:50:00,168 INFO    SenderThread:17104 [sender.py:send_request_defer():598] handle sender defer: 13
+2023-06-08 06:50:00,168 INFO    SenderThread:17104 [sender.py:transition_state():602] send defer: 14
+2023-06-08 06:50:00,168 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: defer
+2023-06-08 06:50:00,168 INFO    HandlerThread:17104 [handler.py:handle_request_defer():170] handle defer: 14
+2023-06-08 06:50:00,169 DEBUG   SenderThread:17104 [sender.py:send():369] send: final
+2023-06-08 06:50:00,169 DEBUG   SenderThread:17104 [sender.py:send():369] send: footer
+2023-06-08 06:50:00,169 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: defer
+2023-06-08 06:50:00,169 INFO    SenderThread:17104 [sender.py:send_request_defer():598] handle sender defer: 14
+2023-06-08 06:50:00,169 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-08 06:50:00,170 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: server_info
+2023-06-08 06:50:00,170 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: get_summary
+2023-06-08 06:50:00,171 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: sampled_history
+2023-06-08 06:50:00,171 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: poll_exit
+2023-06-08 06:50:00,171 DEBUG   SenderThread:17104 [sender.py:send_request():396] send_request: server_info
+2023-06-08 06:50:00,312 INFO    MainThread:17104 [wandb_run.py:_footer_history_summary_info():3467] rendering history
+2023-06-08 06:50:00,313 INFO    MainThread:17104 [wandb_run.py:_footer_history_summary_info():3499] rendering summary
+2023-06-08 06:50:00,313 INFO    MainThread:17104 [wandb_run.py:_footer_sync_info():3426] logging synced files
+2023-06-08 06:50:00,313 DEBUG   HandlerThread:17104 [handler.py:handle_request():144] handle_request: shutdown
+2023-06-08 06:50:00,313 INFO    HandlerThread:17104 [handler.py:finish():854] shutting down handler
+2023-06-08 06:50:01,170 INFO    WriterThread:17104 [datastore.py:close():298] close: /home/ubuntu/MLOps-zoomcamp/homeworks/wk03_module-02b_exp-tracking-with-WB/wandb/run-20230608_064937-iueatnea/run-iueatnea.wandb
+2023-06-08 06:50:01,312 INFO    SenderThread:17104 [sender.py:finish():1526] shutting down sender
+2023-06-08 06:50:01,313 INFO    SenderThread:17104 [file_pusher.py:finish():159] shutting down file pusher
+2023-06-08 06:50:01,313 INFO    SenderThread:17104 [file_pusher.py:join():164] waiting for file pusher
