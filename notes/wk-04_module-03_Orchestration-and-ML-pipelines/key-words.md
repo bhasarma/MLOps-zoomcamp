@@ -1,8 +1,5 @@
 # Keyowrds from module 04: Orchestration and ML pipelines
 
-## M
-- MLOps
-
 ## O
 - Orchestration
 
