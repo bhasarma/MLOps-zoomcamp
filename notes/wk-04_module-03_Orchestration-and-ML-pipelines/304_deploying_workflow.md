@@ -33,7 +33,7 @@ Created project in /home/bsarma/git-repos/MLOps-zoomcamp/wk-04_module-03_Orchest
 
 Keep in mind that if we run `prefect project init`, it willn't overwrite these files. We have to delete them first.
 
-![Schematic of work-flow](https://imgur.com/YDHTEQ0)
+![https://imgur.com/YDHTEQ0](https://imgur.com/YDHTEQ0)
 
 - `prefect deploy --help` for getting help information
 
