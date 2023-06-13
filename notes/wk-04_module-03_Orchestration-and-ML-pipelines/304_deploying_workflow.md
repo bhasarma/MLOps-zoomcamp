@@ -37,6 +37,22 @@ Keep in mind that if we run `prefect project init`, it willn't overwrite these f
 
 - `prefect deploy --help` for getting help information
 
+Deployment with:
+```
+(prefect-ops) bsarma@turing:~/git-repos/MLOps-zoomcamp/wk-04_module-03_Orchestration-and-ML-pipelines$ prefect deploy 3.4/orchestrate.py:main_flow -n taxi1 -p zoompool
+Deployment 'main-flow/taxi1' successfully created with id 'edfa7662-6ef6-4f62-9d89-ecbd710b0cbc'.
+View Deployment in UI: http://127.0.0.1:4200/deployments/deployment/edfa7662-6ef6-4f62-9d89-ecbd710b0cbc
+
+To execute flow runs from this deployment, start a worker that pulls work from the 'zoompool' work pool
+```
+
+Then, 
+```
+(prefect-ops) bsarma@turing:~/git-repos/MLOps-zoomcamp/wk-04_module-03_Orchestration-and-ML-pipelines$ prefect worker start -p zoompool
+Discovered worker type 'process' for work pool 'zoompool'.
+Worker 'ProcessWorker d28f15ce-729c-489d-8786-abc648398dae' started!
+```
+
 Reference:
 
 - link to video: https://www.youtube.com/watch?v=3YjagezFhOo&list=PL3MmuxUbc_hIUISrluw_A7wDSmfOhErJK&index=19
