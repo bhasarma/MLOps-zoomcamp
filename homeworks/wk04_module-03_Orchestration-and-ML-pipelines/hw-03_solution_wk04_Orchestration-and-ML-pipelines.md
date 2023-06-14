@@ -99,6 +99,37 @@ green_tripdata_2023-02.parquet                 100%[============================
 
 2023-06-14 10:35:59 (13,2 MB/s) - ‘green_tripdata_2023-02.parquet’ saved [1533740/1533740]
 ```
+Step 3: activate the conda environment \
+`(base) bsarma@turing:~/git-repos/MLOps-zoomcamp/homeworks/wk04_module-03_Orchestration-and-ML-pipelines$ conda activate prefect-ops`
+
+Step 4: initialize the project: \
+`(prefect-ops) bsarma@turing:~/git-repos/MLOps-zoomcamp/homeworks/wk04_module-03_Orchestration-and-ML-pipelines$ prefect project init`
+
+Step 5: start the server: \
+`(prefect-ops) bsarma@turing:~/git-repos/MLOps-zoomcamp/homeworks/wk04_module-03_Orchestration-and-ML-pipelines$ prefect server start`
+
+Step 6: Open the UI in browser with `http://127.0.0.1:4200`
+
+Step 7: Open another terminal, activate the conda env and navigate to where python script for homweok `orchestrate.py` is located
+
+Step 8: deploy the script into the pool called hw-04-pool
+```
+(prefect-ops) bsarma@turing:~/git-repos/MLOps-zoomcamp/homeworks/wk04_module-03_Orchestration-and-ML-pipelines$  prefect deploy orchestrate.py:main_flow -n green-taxi-23 -p hw-04-pool
+Deployment 'main-flow/green-taxi-23' successfully created with id '9d2ccafd-5db9-4e05-aa81-f1546d131e6f'.
+View Deployment in UI: http://127.0.0.1:4200/deployments/deployment/9d2ccafd-5db9-4e05-aa81-f1546d131e6f
+
+To execute flow runs from this deployment, start a worker that pulls work from the 'hw-04-pool' work pool
+```
+Step 9: start a worker that pulls work from the pool
+```
+(prefect-ops) bsarma@turing:~/git-repos/MLOps-zoomcamp/homeworks/wk04_module-03_Orchestration-and-ML-pipelines$ prefect worker start -p hw-04-pool
+Discovered worker type 'process' for work pool 'hw-04-pool'.
+Worker 'ProcessWorker d923c790-1c26-4967-9b9e-8abb9aab74a3' started!
+```
+
+Step 10: Start another terminal and activate the conda env.
+
+Step 11: Start a run of the deployed flow either from CLI or from the UI
 
 ## Q4. RMSE (Markdown Artifact)
 
