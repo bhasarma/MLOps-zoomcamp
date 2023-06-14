@@ -1,5 +1,9 @@
 ## Solution to Homework 04 | WEEK 04 | Module 03 | Orchestration and ML Pipelines with Prefect
 
+![Prefect logo](./images/prefect-logo.svg)
+
+---
+
 You can find the questions for this homework here [here](https://github.com/DataTalksClub/mlops-zoomcamp/blob/main/cohorts/2023/03-orchestration/homework.md)
 
 The goal of this homework is to familiarize users with workflow orchestration using Prefect. 
@@ -42,7 +46,9 @@ What’s the cron schedule for that?
 
 ![Crone scheduler Syntax](./images/crone-schedule-syntax.png)
 
-## Q3. RMSE 
+`0 9 3 * *`
+
+## Q3. RMSE
 
 Download the January 2023 Green Taxi data and use it for your training data.
 Download the February 2023 Green Taxi data and use it for your validation data. 
@@ -63,6 +69,36 @@ What’s the final RMSE to five decimal places?
 - 8.89443
 - 9.12250
 
+**Answer ro Q3**
+- Download January 2023 green taxi data and use it for your training data
+```
+(base) bsarma@turing:~/git-repos/MLOps-zoomcamp/homeworks/wk04_module-03_Orchestration-and-ML-pipelines/data$ wget https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-01.parquet
+--2023-06-14 10:33:28--  https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-01.parquet
+Resolving d37ci6vzurychx.cloudfront.net (d37ci6vzurychx.cloudfront.net)... 2600:9000:2156:400:b:20a5:b140:21, 2600:9000:2156:8200:b:20a5:b140:21, 2600:9000:2156:e00:b:20a5:b140:21, ...
+Connecting to d37ci6vzurychx.cloudfront.net (d37ci6vzurychx.cloudfront.net)|2600:9000:2156:400:b:20a5:b140:21|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1427002 (1,4M) [binary/octet-stream]
+Saving to: ‘green_tripdata_2023-01.parquet’
+
+green_tripdata_2023-01.parquet                 100%[===================================================================================================>]   1,36M  --.-KB/s    in 0,1s    
+
+2023-06-14 10:33:28 (13,4 MB/s) - ‘green_tripdata_2023-01.parquet’ saved [1427002/1427002]
+```
+- download February 2023 Green Taxi data and use it for validation data
+
+```
+(base) bsarma@turing:~/git-repos/MLOps-zoomcamp/homeworks/wk04_module-03_Orchestration-and-ML-pipelines/data$ wget https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-02.parquet
+--2023-06-14 10:35:59--  https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2023-02.parquet
+Resolving d37ci6vzurychx.cloudfront.net (d37ci6vzurychx.cloudfront.net)... 2600:9000:2156:7c00:b:20a5:b140:21, 2600:9000:2156:cc00:b:20a5:b140:21, 2600:9000:2156:1800:b:20a5:b140:21, ...
+Connecting to d37ci6vzurychx.cloudfront.net (d37ci6vzurychx.cloudfront.net)|2600:9000:2156:7c00:b:20a5:b140:21|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1533740 (1,5M) [binary/octet-stream]
+Saving to: ‘green_tripdata_2023-02.parquet’
+
+green_tripdata_2023-02.parquet                 100%[===================================================================================================>]   1,46M  --.-KB/s    in 0,1s    
+
+2023-06-14 10:35:59 (13,2 MB/s) - ‘green_tripdata_2023-02.parquet’ saved [1533740/1533740]
+```
 
 ## Q4. RMSE (Markdown Artifact)
 
