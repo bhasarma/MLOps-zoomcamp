@@ -38,6 +38,9 @@ What’s the cron schedule for that?
 - `9 * 3 0 *`
 - `* * 9 3 0`
 
+**Answer to Q2**
+
+![Crone scheduler Syntax](./images/crone-schedule-syntax.png)
 
 ## Q3. RMSE 
 
