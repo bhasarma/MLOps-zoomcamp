@@ -1,7 +1,7 @@
 # File for configuring project / deployment build, push and pull steps
 
 # Generic metadata about this project
-name: wk-04_module-03_Orchestration-and-ML-pipelines
+name: MLOps-zoomcamp
 prefect-version: 2.10.8
 
 # build section allows you to manage and build docker images
